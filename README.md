@@ -234,18 +234,6 @@ When using the trained model, provide all required features except `Loan_ID` and
 - Fairness, explainability, regulatory compliance, data privacy, and model monitoring are essential for real-world credit or lending applications and are outside the scope of this notebook.
 - The saved column artifact has a `.json` extension but is joblib-serialized binary data. Rename or regenerate it as true JSON if human-readable metadata is required.
 
-## Future Improvements
-
-Potential enhancements include:
-
-- Add a `requirements.txt` or `pyproject.toml` for reproducible dependency installation.
-- Replace manual preprocessing with a scikit-learn pipeline.
-- Add imputation instead of dropping all rows with missing values.
-- Compare multiple algorithms such as logistic regression, random forest, gradient boosting, and calibrated SVMs.
-- Add cross-validation and richer metrics such as precision, recall, F1-score, ROC-AUC, and confusion matrix.
-- Save model metadata, training metrics, and preprocessing configuration in a clearly versioned format.
-- Add automated tests for the prediction helper.
-- Package the model behind a simple API or web application for easier inference.
 
 ## License
 
